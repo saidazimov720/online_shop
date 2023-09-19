@@ -9,5 +9,17 @@
     display: flex;
     justify-content: space-around;
 
-    
+    .card{
+        text-align: center;
+
+        p{
+            font-style: italic;
+        }
+
+        img{
+            width: 250px;
+            border-radius: 25px;
+        }
+
+    }
 }

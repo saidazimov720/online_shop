@@ -9,5 +9,15 @@
   display: flex;
   justify-content: space-around;
 }
+#res .card {
+  text-align: center;
+}
+#res .card p {
+  font-style: italic;
+}
+#res .card img {
+  width: 250px;
+  border-radius: 25px;
+}
 
 /*# sourceMappingURL=style.css.map */
