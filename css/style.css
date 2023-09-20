@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+header {
+  width: 100%;
+  height: 70px;
+  padding-top: 10px;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-around;
+}
+
 #res {
   width: 250px;
   display: flex;
