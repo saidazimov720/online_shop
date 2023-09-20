@@ -25,7 +25,7 @@ function showProducts(arr) {
         <button onlick="updateProduct(${id})">Delete</button>
         </div>
         `;
-    });
+    }).join(" ");
 }
 
 getProducts();
