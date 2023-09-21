@@ -12,6 +12,8 @@ header {
   display: flex;
   justify-content: space-around;
   float: left;
+  position: sticky;
+  top: 0;
 }
 header .logo {
   width: 100px;
@@ -49,6 +51,8 @@ header .parts li {
 #res .card {
   text-align: center;
   width: 370px;
+  border: 1px solid black;
+  margin-top: 50px;
 }
 #res .card p {
   font-style: italic;

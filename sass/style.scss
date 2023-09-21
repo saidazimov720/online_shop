@@ -9,9 +9,11 @@ header{
     height: 70px;
     padding-top: 10px;
     background-color: yellow;
-    display: flex;
+    display: flex;  
     justify-content: space-around;
     float: left;
+    position: sticky;
+    top: 0;
 
     .logo{
         width: 100px;
@@ -54,6 +56,8 @@ header{
     .card{
         text-align: center;
         width: 370px;
+        border: 1px solid black;
+        margin-top: 50px;
 
         p{
             font-style: italic;
