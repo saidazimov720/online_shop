@@ -47,12 +47,15 @@ header .part ul li {
 }
 
 #res {
-  width: 250px;
+  width: 1490px;
+  overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 #res .card {
   text-align: center;
+  width: 370px;
 }
 #res .card p {
   font-style: italic;
