@@ -27,6 +27,7 @@ header .catalog button {
   padding: 5px 30px;
   border-radius: 6px;
   background-color: #F188F2;
+  cursor: pointer;
 }
 header .catalog input {
   height: 25px;
@@ -38,7 +39,7 @@ header .parts {
   justify-content: space-around;
 }
 header .parts li {
-  padding-left: 100px;
+  padding-left: 80px;
   padding-top: 20px;
   list-style-type: none;
   cursor: pointer;
