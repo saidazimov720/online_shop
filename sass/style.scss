@@ -53,12 +53,15 @@ header{
 }
 
 #res{
-    width: 250px;
+    width: 1490px;
+    overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 
     .card{
         text-align: center;
+        width: 370px;
 
         p{
             font-style: italic;
