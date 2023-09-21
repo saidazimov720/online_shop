@@ -61,7 +61,7 @@ header .parts li {
 .img .text {
   position: absolute;
   top: 200px;
-  left: 200px;
+  left: 100px;
   background-color: #A1E2EB;
   z-index: -1;
 }
@@ -80,6 +80,20 @@ header .parts li {
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+}
+.img .text .buttons {
+  word-spacing: 50px;
+}
+.img .text .buttons button {
+  font-size: 25px;
+  background-color: transparent;
+  padding: 25px 50px;
+  border-radius: 13px;
+}
+.img .text .buttons button:hover {
+  background-color: #FFF;
+  color: #2D2D2D;
+  border-color: transparent;
 }
 .img img {
   margin-top: 30px;
