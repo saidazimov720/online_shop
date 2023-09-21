@@ -18,11 +18,12 @@ header .logo {
 }
 header .catalog {
   letter-spacing: 25px;
+  padding-top: 15px;
 }
 header .catalog button {
   font-size: 15px;
   padding: 5px 30px;
-  border-radius: 15px;
+  border-radius: 6px;
 }
 header .catalog input {
   height: 25px;
@@ -30,9 +31,11 @@ header .catalog input {
 }
 header .parts {
   display: flex;
+  justify-content: space-around;
 }
 header .parts li {
-  padding-left: 35px;
+  padding-left: 100px;
+  padding-top: 20px;
   list-style-type: none;
 }
 
