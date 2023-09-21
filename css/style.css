@@ -99,6 +99,8 @@ header .parts li:hover {
   background-color: transparent;
   padding: 25px 50px;
   border-radius: 13px;
+  color: white;
+  border-color: white;
 }
 .img .text .buttons button:hover {
   background-color: #FFF;
@@ -112,7 +114,19 @@ header .parts li:hover {
   z-index: -1;
 }
 
-#res {
+.lots h2 {
+  position: absolute;
+  top: 850px;
+  font-size: 30px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 1.2px;
+}
+.lots #res {
   position: absolute;
   top: 850px;
   width: 1490px;
@@ -121,16 +135,16 @@ header .parts li:hover {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-#res .card {
+.lots #res .card {
   text-align: center;
   width: 370px;
   border: 1px solid black;
   margin-top: 50px;
 }
-#res .card p {
+.lots #res .card p {
   font-style: italic;
 }
-#res .card img {
+.lots #res .card img {
   width: 250px;
   border-radius: 25px;
 }

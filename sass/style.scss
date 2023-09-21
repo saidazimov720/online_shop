@@ -116,6 +116,8 @@ header{
                 background-color: transparent;
                 padding: 25px 50px;
                 border-radius: 13px;
+                color: white;
+                border-color: white;
 
                 &:hover{
                     background-color: #FFF;
@@ -134,30 +136,44 @@ header{
     }
 }
 
-
-#res{
-    position: absolute;
-    top: 850px;
-    width: 1490px;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    .card{
-        text-align: center;
-        width: 370px;
-        border: 1px solid black;
-        margin-top: 50px;
-
-        p{
-            font-style: italic;
+.lots{
+    h2{
+        position: absolute;
+        top: 850px;
+        font-size: 30px;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 52px; 
+        letter-spacing: 1.2px;
+    }
+    #res{
+        position: absolute;
+        top: 850px;
+        width: 1490px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+        .card{
+            text-align: center;
+            width: 370px;
+            border: 1px solid black;
+            margin-top: 50px;
+    
+            p{
+                font-style: italic;
+            }
+    
+            img{
+                width: 250px;
+                border-radius: 25px;
+            }
+    
         }
-
-        img{
-            width: 250px;
-            border-radius: 25px;
-        }
-
     }
 }
+
