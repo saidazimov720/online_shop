@@ -57,20 +57,27 @@ header{
 
     .year{
         width:50%;
-        height: 400px;
+        height: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        top: 200px;
         background-color: #A1E2EB;;
+        z-index: -1;
     }
 
     img{
-        float: right;
+        margin-top: 30px;
+        position: absolute;
+        right: 0px;
+        z-index: -1;
     }
 }
 
 
 #res{
+    margin-top: 500px;
     width: 1490px;
     overflow: hidden;
     display: flex;
