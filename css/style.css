@@ -53,13 +53,33 @@ header .parts li {
 .img .year {
   width: 50%;
   height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: 200px;
   background-color: #A1E2EB;
   z-index: -1;
+}
+.img .text {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  background-color: #A1E2EB;
+  z-index: -1;
+}
+.img .text h1 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+.img .text blockquote {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 63px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
 }
 .img img {
   margin-top: 30px;
@@ -69,7 +89,8 @@ header .parts li {
 }
 
 #res {
-  margin-top: 500px;
+  position: absolute;
+  top: 850px;
   width: 1490px;
   overflow: hidden;
   display: flex;
