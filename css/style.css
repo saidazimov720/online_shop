@@ -41,6 +41,10 @@ header .parts li {
   padding-left: 100px;
   padding-top: 20px;
   list-style-type: none;
+  cursor: pointer;
+}
+header .parts li:hover {
+  color: #FC42FF;
 }
 
 .img {

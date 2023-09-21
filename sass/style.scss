@@ -44,6 +44,11 @@ header{
                padding-left: 100px;
                padding-top: 20px;
                list-style-type: none;
+               cursor: pointer;
+
+               &:hover{
+                    color: #FC42FF;
+               }
             }
     }
 }
