@@ -140,7 +140,7 @@ header .parts li:hover {
 .lots #res .card {
   text-align: center;
   width: 300px;
-  height: 600px;
+  height: 500px;
   border: 1px solid transparent;
   background-color: whitesmoke;
   border-radius: 5px;
@@ -184,6 +184,7 @@ header .parts li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-right: 200px;
 }
 .balls .phone h2 {
   font-size: 60px;
