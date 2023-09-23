@@ -1,3 +1,4 @@
+const spinner = document.getElementById("spinner");
 const productsURL = "https://fakestoreapi.com/products";
 const sartsURL = "https://fakestoreapi.com/carts";
 const usersURL = "https://fakestoreapi.com/users";
@@ -10,17 +11,17 @@ function getProducts() {
 }
 
 function showProducts(arr) {
+    spinner.classList.remove("spinner");
+    spinner.classList.add("loader");
     console.log(arr);
     result.innerHTML = "";
     result.innerHTML = arr.map((item) => {
-        const {id, title, price, category, description, image} = item;
+        const {id, title, price,  image} = item;
         return `
         <div class="card">
         <img src="${image}" alt="${title}">
         <h2>${title}</h2>
-        <span>${price}</span>
-        <span>${category}</span>
-        <p>${description}</p>
+        <span>${price}</span><br>
         <button onlick="updateProduct(${id})">Update</button>
         <button onlick="updateProduct(${id})">Delete</button>
         </div>
