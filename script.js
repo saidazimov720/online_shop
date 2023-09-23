@@ -21,11 +21,11 @@ function showProducts(arr) {
         <span>${price}</span>
         <span>${category}</span>
         <p>${description}</p>
-        <button onlick="updateProduct(${id})">Update</button>
-        <button onlick="updateProduct(${id})">Delete</button>
-        </div>
-        `;
+        </div>`;
     }).join(" ");
 }
 
 getProducts();
+
+// <button onlick="updateProduct(${id})">Update</button>
+//         <button onlick="updateProduct(${id})">Delete</button>
