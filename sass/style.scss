@@ -145,7 +145,7 @@ header{
         font-family: Montserrat;
         font-size: 40px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 700px;
         line-height: 52px; 
         letter-spacing: 1.2px;
     }
@@ -163,6 +163,11 @@ header{
             width: 370px;
             border: 1px solid black;
             margin-top: 50px;
+
+            h2{
+                text-align: center;
+                position: block;
+            }
     
             p{
                 font-style: italic;
