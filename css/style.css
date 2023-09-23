@@ -166,17 +166,24 @@ header .parts li:hover {
 .balls {
   display: flex;
   position: relative;
-  top: 4300px;
+  justify-content: space-between;
+  align-items: center;
+  top: 3600px;
   width: 100%;
   height: 576px;
-  background: linear-gradient(262.69deg, #CA4ACB -0.43%, #F088F2 104.36%);
+  background: linear-gradient(white 13.5%, #ca4acb 13% 100%);
+}
+.balls .image {
+  width: 90%;
+}
+.balls .image img {
+  padding-left: 10px;
 }
 .balls .phone {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
 }
 .balls .phone h2 {
   font-size: 60px;
@@ -198,6 +205,10 @@ header .parts li:hover {
   background-color: transparent;
   border-color: whitesmoke;
   color: white;
+}
+.balls .phone button:hover {
+  background-color: white;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,43 +1,43 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     width: 100%;
     height: 100px;
     padding-top: 10px;
     background-color: white;
-    display: flex;  
+    display: flex;
     justify-content: space-around;
     float: left;
 
-    .loader{
+    .loader {
         width: 100%;
         height: 100%;
     }
 
 
 
-    .logo{
+    .logo {
         width: 100px;
         // display: flex;
         // justify-content: center;
         // align-items: center;
 
-        img{
+        img {
             width: 50px;
             margin-top: 20px;
             margin-left: 30px;
         }
     }
 
-    .catalog{
+    .catalog {
         letter-spacing: 25px;
         padding-top: 15px;
 
-        button{
+        button {
             font-size: 15px;
             padding: 5px 30px;
             border-radius: 6px;
@@ -45,65 +45,68 @@ header{
             cursor: pointer;
         }
 
-        input{
+        input {
             height: 25px;
             border-radius: 5px;
             width: 500px;
         }
     }
 
-    .parts{
+    .parts {
         display: flex;
         justify-content: space-around;
-            li{
-               padding-left: 80px;
-               padding-top: 20px;
-               list-style-type: none;
-               cursor: pointer;
 
-               &:hover{
-                    color: #FC42FF;
-               }
+        li {
+            padding-left: 80px;
+            padding-top: 20px;
+            list-style-type: none;
+            cursor: pointer;
+
+            &:hover {
+                color: #FC42FF;
             }
+        }
     }
 }
 
-.img{
+.img {
     display: flex;
     width: 100%;
     height: 400px;
     margin-top: 70px;
     float: right;
 
-    .year{
-        width:50%;
+    .year {
+        width: 50%;
         height: 600px;
         // display: flex;
         // justify-content: center;
         // align-items: center;
         position: absolute;
         top: 200px;
-        background-color: #A1E2EB;;
+        background-color: #A1E2EB;
+        ;
         z-index: -1;
     }
 
-    .text{
+    .text {
         position: absolute;
         top: 200px;
         left: 100px;
-        background-color: #A1E2EB;;
+        background-color: #A1E2EB;
+        ;
         z-index: -1;
 
-        h1{
+        h1 {
             color: #FFF;
             font-family: Montserrat;
             font-size: 80px;
-            font-style: normal; 
+            font-style: normal;
             font-weight: 700;
             line-height: 130%;
         }
 
-        blockquote{
+        blockquote {
             color: #FFF;
             font-family: Montserrat;
             font-size: 63px;
@@ -112,10 +115,10 @@ header{
             line-height: 130%;
         }
 
-        .buttons{
+        .buttons {
             word-spacing: 50px;
 
-            button{
+            button {
                 font-size: 25px;
                 background-color: transparent;
                 padding: 25px 50px;
@@ -123,7 +126,7 @@ header{
                 color: white;
                 border-color: white;
 
-                &:hover{
+                &:hover {
                     background-color: #FFF;
                     color: #2D2D2D;
                     border-color: transparent;
@@ -132,7 +135,7 @@ header{
         }
     }
 
-    img{
+    img {
         margin-top: 30px;
         position: absolute;
         right: 0px;
@@ -140,8 +143,8 @@ header{
     }
 }
 
-.lots{
-    .cat{
+.lots {
+    .cat {
         position: absolute;
         top: 830px;
         font-size: 30px;
@@ -150,10 +153,11 @@ header{
         font-size: 40px;
         font-style: normal;
         font-weight: 700px;
-        line-height: 52px; 
+        line-height: 52px;
         letter-spacing: 1.2px;
     }
-    #res{
+
+    #res {
         position: absolute;
         top: 850px;
         width: 1490px;
@@ -161,8 +165,8 @@ header{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-    
-        .card{
+
+        .card {
             text-align: center;
             width: 300px;
             height: 600px;
@@ -172,75 +176,83 @@ header{
             margin-top: 50px;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 
-            h2{
+            h2 {
                 text-align: center;
                 font-size: 17px;
             }
-    
-            p{
+
+            p {
                 font-style: italic;
             }
-    
-            img{
+
+            img {
                 width: 250px;
                 height: 350px;
                 border-radius: 25px;
             }
 
-            span{
+            span {
                 color: red;
             }
-    
+
         }
     }
 }
 
-.balls{
+.balls {
     display: flex;
     position: relative;
-    top: 4300px;
+    justify-content: space-between;
+    align-items: center;
+    top: 3600px;
     width: 100%;
     height: 576px;
-    background: linear-gradient(262.69deg, #CA4ACB -0.43%, #F088F2 104.36%);
+    background: linear-gradient(white 13.5%, #ca4acb 13% 100%);
 
-    
-    // .image{
-    //     position: relative;
-    //     img{
-    //         position: absolute;
-    //     }
-    // }
 
-    .phone{
+    .image {
+        width: 90%;
+
+        img {
+            padding-left: 10px;
+        }
+    }
+
+    .phone {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 100px;
+        // margin-left: 0px;
 
-        h2{
+        h2 {
             font-size: 60px;
             color: white;
         }
-        blockquote{
+
+        blockquote {
             font-size: 25px;
             color: white;
         }
 
-        input{
+        input {
             font-size: 35px;
             border: 1px solid transparent;
             border-radius: 25px;
         }
 
-        button{
+        button {
             font-size: 28px;
             padding: 10px 130px;
             border-radius: 25px;
             background-color: transparent;
             border-color: whitesmoke;
             color: white;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
         }
     }
 }
-
