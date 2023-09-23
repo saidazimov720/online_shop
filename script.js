@@ -11,8 +11,8 @@ function getProducts() {
 }
 
 function showProducts(arr) {
-    spinner.classList.remove("spinner");
-    spinner.classList.add("loader");
+    spinner.classList.remove("loading");
+    spinner.classList.add("loaded");
     console.log(arr);
     result.innerHTML = "";
     result.innerHTML = arr.map((item) => {
