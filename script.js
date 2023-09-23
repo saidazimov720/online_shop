@@ -21,7 +21,7 @@ function showProducts(arr) {
         <div class="card">
         <img src="${image}" alt="${title}">
         <h2>${title}</h2>
-        <span>${price}</span><br>
+        <span>${price}$</span><br>
         <button onlick="updateProduct(${id})">Update</button>
         <button onlick="updateProduct(${id})">Delete</button>
         </div>
