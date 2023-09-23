@@ -174,7 +174,8 @@ header .parts li:hover {
   background: linear-gradient(white 13.5%, #ca4acb 13% 100%);
 }
 .balls .image {
-  width: 90%;
+  width: 100%;
+  left: 0px;
 }
 .balls .image img {
   padding-left: 10px;
