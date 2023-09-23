@@ -12,8 +12,6 @@ header{
     display: flex;  
     justify-content: space-around;
     float: left;
-    position: sticky;
-    top: 0;
 
     .loader{
         width: 100%;
@@ -115,7 +113,6 @@ header{
         }
 
         .buttons{
-            // padding-left: 25px;
             word-spacing: 50px;
 
             button{
@@ -144,8 +141,9 @@ header{
 }
 
 .lots{
-    h2{
-        top: 850px;
+    .cat{
+        position: absolute;
+        top: 830px;
         font-size: 30px;
         color: #000;
         font-family: Montserrat;
@@ -198,10 +196,36 @@ header{
 }
 
 .balls{
-    position: absolute;
-    top: 4100px;
+    display: flex;
+    position: relative;
+    top: 4300px;
     width: 100%;
     height: 476px;
     background: linear-gradient(262.69deg, #CA4ACB -0.43%, #F088F2 104.36%);
+
+    
+    // .image{
+    //     position: relative;
+    //     img{
+    //         position: absolute;
+    //     }
+    // }
+
+    .phone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+
+        h2{
+            font-size: 60px;
+            color: white;
+        }
+        blockquote{
+            font-size: 25px;
+            color: white;
+        }
+    }
 }
 
