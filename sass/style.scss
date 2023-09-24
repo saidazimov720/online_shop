@@ -143,6 +143,7 @@ header {
 }
 
 .lots {
+    display: block;
     .cat {
         position: absolute;
         top: 830px;
@@ -199,9 +200,9 @@ header {
 }
 
 .lider{
+    position: absolute;
+    top: 2050px;
     cat2{
-         position: absolute;
-        top: 830px;
         font-size: 30px;
         color: #000;
         font-family: Montserrat;
@@ -211,6 +212,45 @@ header {
         line-height: 52px;
         letter-spacing: 1.2px;
     }
+
+    .res2{
+        width: 1490px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .card {
+            text-align: center;
+            width: 300px;
+            height: 500px;
+            border: 1px solid transparent;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            margin-top: 50px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+
+            h2 {
+                text-align: center;
+                font-size: 17px;
+            }
+
+            p {
+                font-style: italic;
+            }
+
+            img {
+                width: 250px;
+                height: 350px;
+                border-radius: 25px;
+            }
+
+            span {
+                color: red;
+            }
+
+        }
+    }
 }
 
 .balls {
@@ -218,7 +258,7 @@ header {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    top: 3000px;
+    top: 2000px;
     width: 100%;
     height: 76vh;
     background: linear-gradient(white 13.5%, #ca4acb 13% 100%);
@@ -268,6 +308,37 @@ header {
                 background-color: white;
                 color: black;
             }
+        }
+    }
+}
+
+.prom{
+    position: absolute;
+    top: 3200px;
+    display: flex;
+    
+
+    h2{
+        @extend cat2;
+        margin-right: 25px;
+    }
+}
+
+.our{
+    position: absolute;
+    top: 3500px;
+    width: 100%;
+
+    .rasm{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        left: 350px;
+
+        img{
+            width: 250px;
+            border: 1px solid black;
+            border-radius: 25px;
         }
     }
 }
