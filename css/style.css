@@ -18,10 +18,10 @@ header .loader {
   height: 100%;
 }
 header .logo {
-  width: 100px;
+  width: 150px;
 }
 header .logo img {
-  width: 50px;
+  width: 80px;
   margin-top: 20px;
   margin-left: 30px;
 }
