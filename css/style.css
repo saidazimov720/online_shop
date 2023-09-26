@@ -8,7 +8,7 @@ header {
   width: 100%;
   height: 100px;
   padding-top: 10px;
-  background-color: white;
+  background-color: blue;
   display: flex;
   justify-content: space-around;
   float: left;
@@ -48,7 +48,7 @@ header .parts {
 }
 header .parts li {
   padding-left: 80px;
-  padding-top: 20px;
+  padding-top: 30px;
   list-style-type: none;
   cursor: pointer;
   font-size: 20px;
@@ -61,19 +61,25 @@ header .parts li:hover {
   display: flex;
   width: 100%;
   height: 400px;
-  margin-top: 70px;
+  margin-top: 0px;
   float: right;
+  display: flex;
+  justify-content: space-between;
 }
 .img .year {
   width: 50%;
   height: 600px;
-  position: absolute;
-  top: 200px;
+  margin-top: 30px;
   background-color: #A1E2EB;
   z-index: -1;
 }
-.img .text {
+.img .ballimg img {
+  display: flex;
   position: absolute;
+}
+.img .text {
+  padding-top: 150px;
+  padding-left: 50px;
   top: 100px;
   left: 100px;
   background-color: #A1E2EB;
@@ -163,6 +169,7 @@ header .parts li:hover {
   width: 250px;
   height: 350px;
   border-radius: 25px;
+  object-fit: cover;
 }
 .lots #res .card span {
   color: red;
