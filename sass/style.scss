@@ -371,6 +371,7 @@ footer{
 
     .contact{
         font-family: bold;
+        line-height: 55px;
 
         h2{
             font-size: 65px;
@@ -397,5 +398,17 @@ footer{
             }
         }
 
+    }
+
+    .address{
+        font-family: bold;
+
+        h2{
+            font-size: 65px;
+        }
+
+        p{
+            font-size: 30px;
+        }
     }
 }

@@ -316,6 +316,7 @@ footer {
 }
 footer .contact {
   font-family: bold;
+  line-height: 55px;
 }
 footer .contact h2 {
   font-size: 65px;
@@ -336,6 +337,15 @@ footer .contact .icons a {
 }
 footer .contact .icons a i {
   font-size: 55px;
+}
+footer .address {
+  font-family: bold;
+}
+footer .address h2 {
+  font-size: 65px;
+}
+footer .address p {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
