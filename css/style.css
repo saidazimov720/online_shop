@@ -8,7 +8,7 @@ header {
   width: 100%;
   height: 100px;
   padding-top: 10px;
-  background-color: blue;
+  background-color: whitesmoke;
   display: flex;
   justify-content: space-around;
   float: left;
@@ -112,9 +112,8 @@ header .parts li:hover {
   color: white;
   border-color: white;
 }
-.img .text .buttons button:hover {
-  background-color: #FFF;
-  color: #2D2D2D;
+.img .text .buttons button :hover {
+  background-color: white;
   border-color: transparent;
 }
 .img img {
@@ -217,6 +216,7 @@ header .parts li:hover {
   width: 250px;
   height: 350px;
   border-radius: 25px;
+  object-fit: cover;
 }
 .lider .res2 .card span {
   color: red;
@@ -227,7 +227,7 @@ header .parts li:hover {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  top: 1700px;
+  top: 2000px;
   width: 100%;
   height: 76vh;
   background: linear-gradient(white 13.5%, #ca4acb 13% 100%);
@@ -259,7 +259,7 @@ header .parts li:hover {
   border: 1px solid transparent;
   border-radius: 25px;
 }
-.balls .phone button {
+.balls .phone .take {
   font-size: 28px;
   padding: 10px 130px;
   border-radius: 25px;
@@ -267,7 +267,7 @@ header .parts li:hover {
   border-color: whitesmoke;
   color: white;
 }
-.balls .phone button:hover {
+.balls .phone .take:hover {
   background-color: white;
   color: black;
 }
@@ -283,7 +283,7 @@ header .parts li:hover {
 
 .our {
   position: absolute;
-  top: 2900px;
+  top: 3200px;
   width: 100%;
 }
 .our h2 {
