@@ -258,7 +258,7 @@ header {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    top: 2000px;
+    top: 1700px;
     width: 100%;
     height: 76vh;
     background: linear-gradient(white 13.5%, #ca4acb 13% 100%);
@@ -314,7 +314,7 @@ header {
 
 .prom{
     position: absolute;
-    top: 3200px;
+    top: 3000px;
     display: flex;
     
 
@@ -326,8 +326,13 @@ header {
 
 .our{
     position: absolute;
-    top: 3500px;
+    top: 2900px;
     width: 100%;
+
+    h2{
+        margin-left: 150px;
+        margin-bottom: 50px;
+    }
 
     .rasm{
         display: flex;
