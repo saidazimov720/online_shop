@@ -306,4 +306,36 @@ header .parts li:hover {
   border-radius: 25px;
 }
 
+footer {
+  position: absolute;
+  top: 3600px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 250px;
+}
+footer .contact {
+  font-family: bold;
+}
+footer .contact h2 {
+  font-size: 65px;
+}
+footer .contact p {
+  font-size: 70px;
+}
+footer .contact .icons {
+  display: flex;
+  justify-content: space-around;
+}
+footer .contact .icons a {
+  font-size: 25px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer .contact .icons a i {
+  font-size: 55px;
+}
+
 /*# sourceMappingURL=style.css.map */
