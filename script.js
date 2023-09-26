@@ -22,10 +22,15 @@ function showProducts(arr) {
         <img src="${image}" alt="${title}">
         <h2>${title}</h2>
         <span>${price}$</span><br>
-        <button onlick="updateProduct(${id})">Buy</button>
+        <button onclick="infohandler(${id})">More Info</button>
         </div>
         `
     }).join(" ");
 }
 
+function infohandler(id) {
+    window.location.replace(`http://127.0.0.1:5500/info/index.html?${id}`);
+}
+
 getProducts();
+
