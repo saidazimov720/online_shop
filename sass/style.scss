@@ -202,69 +202,19 @@ header {
                 color: red;
             }
 
-        }
-    }
-}
-
-.lider{
-    position: absolute;
-    top: 2050px;
-    cat2{
-        font-size: 30px;
-        color: #000;
-        font-family: Montserrat;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700px;
-        line-height: 52px;
-        letter-spacing: 1.2px;
-    }
-
-    .res2{
-        width: 1490px;
-        overflow: scroll;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        .card {
-            text-align: center;
-            width: 300px;
-            height: 400px;
-            border: 1px solid transparent;
-            background-color: whitesmoke;
-            border-radius: 5px;
-            margin-top: 50px;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-
-            h2 {
-                text-align: center;
-                font-size: 17px;
-            }
-
-            p {
-                font-style: italic;
-            }
-
-            img {
-                width: 250px;
-                height: 350px;
-                border-radius: 25px;
-                object-fit: contain;
-            }
-
-            span {
-                color: red;
-            }
-
             button{
-                width: 100px;
-                font-size: 100px;
+                width: 250px;
+                height: 50px;
+                // opacity: 0;
+                // transition: 0.3s;
+                // :hover{
+                //     opacity: 1;
+                // }
             }
-
         }
     }
 }
+
 
 .balls {
     display: flex;
@@ -332,7 +282,6 @@ header {
     
 
     h2{
-        @extend cat2;
         margin-right: 25px;
     }
 }
