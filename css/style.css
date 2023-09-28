@@ -284,6 +284,7 @@ footer .contact {
 }
 footer .contact h2 {
   font-size: 65px;
+  margin-top: 35px;
 }
 footer .contact p {
   font-size: 70px;
@@ -304,6 +305,7 @@ footer .contact .icons a i {
 }
 footer .address {
   font-family: bold;
+  margin-top: 35px;
 }
 footer .address h2 {
   font-size: 65px;
@@ -355,7 +357,7 @@ footer .address p {
   font-size: 25px;
 }
 .info .information p {
-  font-size: 35px;
+  font-size: 25px;
   text-align: justify;
 }
 
