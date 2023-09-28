@@ -13,9 +13,20 @@ header {
   justify-content: space-around;
   float: left;
 }
-header .loader {
+header .loding {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+}
+header .loding img {
   width: 100%;
   height: 100%;
+}
+header .loded {
+  display: none;
 }
 header .logo {
   width: 150px;
@@ -328,8 +339,12 @@ footer .address p {
   display: flex;
   justify-content: space-around;
 }
-.info .information .into_price .price {
-  font-size: 155px;
+.info .information .into_price span {
+  display: inline-block;
+  margin: 10px;
+  font-family: sans-serif;
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.511);
 }
 .info .information button {
   text-align: center;
@@ -338,6 +353,10 @@ footer .address p {
   margin-bottom: 25px;
   margin-top: 25px;
   font-size: 25px;
+}
+.info .information p {
+  font-size: 35px;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

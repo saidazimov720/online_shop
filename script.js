@@ -1,8 +1,9 @@
-const spinner = document.getElementById("spinner");
 const productsURL = "https://fakestoreapi.com/products?limit=12";
 const sartsURL = "https://fakestoreapi.com/carts";
 const usersURL = "https://fakestoreapi.com/users";
 const result = document.getElementById("res");
+const loding = document.getElementById("loding");
+
 
 function getProducts() {
     fetch(productsURL)
@@ -11,8 +12,6 @@ function getProducts() {
 }
 
 function showProducts(arr) {
-    spinner.classList.remove("loading");
-    spinner.classList.add("loaded");
     console.log(arr);
     result.innerHTML = "";
     result.innerHTML = arr.map((item) => {
