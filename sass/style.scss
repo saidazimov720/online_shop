@@ -57,14 +57,14 @@ header {
             font-size: 20px;
             height: 40px;
             border-radius: 5px;
-            width: 450px;
+            width: 410px;
         }
     }
 
     .parts {
         display: flex;
         justify-content: space-around;
-
+        padding-right: 35px;
         li {
             padding-left: 80px;
             padding-top: 30px;
@@ -308,11 +308,11 @@ header {
 
 .our{
     position: absolute;
-    top: 3200px;
+    top: 3100px;
     width: 100%;
 
     h2{
-        margin-left: 150px;
+        margin-left: 50px;
         margin-bottom: 50px;
     }
 
@@ -324,7 +324,7 @@ header {
 
         img{
             width: 250px;
-            border: 1px solid black;
+            border: 1px solid whitesmoke;
             border-radius: 25px;
         }
     }
