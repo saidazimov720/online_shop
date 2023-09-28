@@ -301,4 +301,11 @@ footer .address p {
   font-size: 30px;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 150px;
+}
+
 /*# sourceMappingURL=style.css.map */

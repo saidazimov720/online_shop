@@ -11,11 +11,13 @@ async function getinfo() {
 function showinfo(data) {
     const {id, title, price, description, image} = data;
     infodiv.innerHTML = `
-    <div>
+
+    <div class="info">
+        <div class="info_img">
         <h1 class="into_title">${title}</h1>
-        <div>
-            <img src="${image}" alt="${title}" class="info_img">
-            <div>
+        <img src="${image}" alt="${title}" >
+        </div>
+            <div clas="information">
                 <p class="info_price">
                     <span>${price}</span>
                     <span>${price + 100}</span>
@@ -25,7 +27,6 @@ function showinfo(data) {
                 <hr/>
                 <p>${description}</p>
             </div>
-        </div>
     </div>
     `;
 }
