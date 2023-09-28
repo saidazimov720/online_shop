@@ -17,13 +17,13 @@ function showinfo(data) {
         <h1 class="into_title">${title}</h1>
         <img src="${image}" alt="${title}" >
         </div>
-            <div clas="information">
+            <div class="information">
                 <p class="info_price">
-                    <span>${price}</span>
-                    <span>${price + 100}</span>
-                    <span>- $100</span>
+                    <span class="price">${price}</span>
+                    <span class="price">${price + 100}</span>
+                    <span class="price">- $100</span>
                 </p>
-                <button onclick="addToCart(${id})">Add to cart</button>
+                <button onclick="addToCart(${id})">Buy</button>
                 <hr/>
                 <p>${description}</p>
             </div>

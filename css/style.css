@@ -319,5 +319,25 @@ footer .address p {
   width: 826px;
   height: 717px;
 }
+.info .information {
+  width: 450px;
+  margin-left: 100px;
+  margin-top: 150px;
+}
+.info .information .into_price {
+  display: flex;
+  justify-content: space-around;
+}
+.info .information .into_price .price {
+  font-size: 155px;
+}
+.info .information button {
+  text-align: center;
+  margin-left: 100px;
+  padding: 30px 80px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-size: 25px;
+}
 
 /*# sourceMappingURL=style.css.map */

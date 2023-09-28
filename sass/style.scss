@@ -383,4 +383,28 @@ footer{
             height: 717px;
         }
     }
+
+    .information{
+        width: 450px;
+        margin-left: 100px;
+        margin-top: 150px;
+
+        .into_price{
+            display: flex;
+            justify-content: space-around;
+
+            .price{
+                font-size: 155px;
+            }
+        }
+
+        button{
+            text-align: center;
+            margin-left: 100px;
+            padding: 30px 80px;
+            margin-bottom: 25px;
+            margin-top: 25px;
+            font-size: 25px;
+        }
+    }
 }
