@@ -19,8 +19,8 @@ function showinfo(data) {
         </div>
             <div class="information">
                 <p class="info_price">
-                    <span>${price}</span>
-                    <span>${price + 100}</span>
+                    <span class="total">${price}$</span>
+                    <span class="old">${price + 100}$</span>
                     <span>- $100</span>
                 </p>
                 <button onclick="addToCart(${id})">Buy</button>

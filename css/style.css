@@ -339,7 +339,9 @@ footer .address p {
   font-family: italic;
   text-align: center;
   margin-bottom: 25px;
+  margin-left: 150px;
   line-height: 60px;
+  width: 500px;
 }
 .info .info_img img {
   width: 500px;
@@ -354,11 +356,12 @@ footer .address p {
 .info .information .info_price {
   display: flex;
   justify-content: space-around;
+  width: 300px;
 }
 .info .information .info_price span {
   display: inline-block;
   margin: 10px;
-  font-size: 45px;
+  font-size: 35px;
   font-family: sans-serif;
   color: rgba(0, 0, 0, 0.511);
 }
