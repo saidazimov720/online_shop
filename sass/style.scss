@@ -241,7 +241,7 @@ header {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    top: 2000px;
+    top: 2100px;
     width: 100%;
     height: 76vh;
     background: linear-gradient(white 13.5%, #ca4acb 13% 100%);
@@ -308,7 +308,7 @@ header {
 
 .our{
     position: absolute;
-    top: 3100px;
+    top: 3150px;
     width: 100%;
 
     h2{
@@ -403,25 +403,28 @@ footer{
         }
 
         img{
-            width: 826px;
-            height: 717px;
+            width: 500px;
+            height: 600px;
+            margin-left: 150px;
         }
     }
 
     .information{
         width: 450px;
-        margin-left: 100px;
+        // margin-left: 60px;
         margin-top: 150px;
+        margin-right: 100px;
 
-        .into_price{
+        .info_price{
             display: flex;
             justify-content: space-around;
 
             span{
                     display: inline-block;
                     margin: 10px;
+                    font-size: 45px;
                     font-family: sans-serif;
-                    text-decoration: line-through;
+                    // text-decoration: line-through;
                     color: rgba(0, 0, 0, 0.511);
             }
         }
