@@ -14,7 +14,7 @@ function showinfo(data) {
 
     <div class="info">
         <div class="info_img">
-        <h1 class="into_title">${title}</h1>
+        <h1 class="into_title">${title}</h1><br/>
         <img src="${image}" alt="${title}" >
         </div>
             <div class="information">

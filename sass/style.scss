@@ -196,7 +196,7 @@ header {
             margin-top: 50px;
             
             &:hover{
-                box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             }
 
             h2 {
@@ -400,6 +400,7 @@ footer{
             font-family: italic;
             text-align: center;
             margin-bottom: 25px;
+            line-height: 60px;
         }
 
         img{
@@ -410,10 +411,10 @@ footer{
     }
 
     .information{
-        width: 450px;
-        // margin-left: 60px;
-        margin-top: 150px;
-        margin-right: 100px;
+        width: 500px;
+        margin-top: 60px;
+        // margin-right: 0px;
+        margin-left: 150px;
 
         .info_price{
             display: flex;
