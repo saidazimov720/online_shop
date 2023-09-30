@@ -2,7 +2,6 @@ const productsURL = "https://fakestoreapi.com/products?limit=8";
 const sartsURL = "https://fakestoreapi.com/carts";
 const usersURL = "https://fakestoreapi.com/users";
 const result = document.getElementById("res");
-const loding = document.getElementById("loding");
 
 
 function getProducts() {

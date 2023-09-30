@@ -358,12 +358,23 @@ footer .address p {
   justify-content: space-around;
   width: 300px;
 }
-.info .information .info_price span {
+.info .information .info_price .total, .info .information .info_price .minus, .info .information .info_price .old {
   display: inline-block;
   margin: 10px;
   font-size: 35px;
   font-family: sans-serif;
-  color: rgba(0, 0, 0, 0.511);
+  color: red;
+}
+.info .information .info_price .old {
+  font-size: 25px;
+  text-decoration: line-through;
+  margin-top: 20px;
+  color: black;
+}
+.info .information .info_price .minus {
+  font-size: 25px;
+  color: black;
+  margin-top: 20px;
 }
 .info .information button {
   text-align: center;

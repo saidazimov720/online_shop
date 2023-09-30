@@ -415,7 +415,6 @@ footer{
     .information{
         width: 500px;
         margin-top: 60px;
-        // margin-right: 0px;
         margin-left: 150px;
 
         .info_price{
@@ -423,13 +422,29 @@ footer{
             justify-content: space-around;
             width: 300px;
 
-            span{
+            .total{
                     display: inline-block;
                     margin: 10px;
                     font-size: 35px;
                     font-family: sans-serif;
                     // text-decoration: line-through;
-                    color: rgba(0, 0, 0, 0.511);
+                    color: red;
+            }
+
+            .old{
+                @extend .total;
+                font-size: 25px;
+                text-decoration: line-through;
+                margin-top: 20px;
+                color: black
+            }
+
+            .minus{
+                @extend .total;
+                font-size: 25px;
+                color: black;
+                margin-top: 20px;
+
             }
         }
 
