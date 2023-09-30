@@ -1,7 +1,7 @@
 const productsURL = "https://fakestoreapi.com/products?limit=8";
 const sartsURL = "https://fakestoreapi.com/carts";
 const usersURL = "https://fakestoreapi.com/users";
-const result = document.getElementById("res");
+const result = document.getElementById("rez");
 
 
 function getProducts() {
@@ -11,7 +11,7 @@ function getProducts() {
 }
 
 function showProducts(arr) {
-    console.log(arr);
+    console.log(result);
     result.innerHTML = "";
     result.innerHTML = arr.map((item) => {
         const {id, title, price,  image} = item;
