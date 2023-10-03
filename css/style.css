@@ -430,6 +430,52 @@ header .parts li:hover {
   font-size: 30px;
 }
 
+.infofoot {
+  position: absolute;
+  top: 1000px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 250px;
+  border-top: 1px solid black;
+}
+.infofoot .contact {
+  font-family: bold;
+  line-height: 55px;
+}
+.infofoot .contact h2 {
+  font-size: 65px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.infofoot .contact p {
+  font-size: 70px;
+}
+.infofoot .contact .icons {
+  display: flex;
+  justify-content: space-around;
+}
+.infofoot .contact .icons a {
+  font-size: 25px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.infofoot .contact .icons a i {
+  font-size: 55px;
+}
+.infofoot .address {
+  font-family: bold;
+  margin-top: 35px;
+}
+.infofoot .address h2 {
+  font-size: 65px;
+}
+.infofoot .address p {
+  font-size: 30px;
+}
+
 .info {
   display: flex;
   justify-content: space-between;

@@ -520,6 +520,62 @@ header {
     }
 }
 
+.infofoot{
+    position: absolute;
+    top: 1000px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 250px;
+    border-top: 1px solid black;
+
+    .contact{
+        font-family: bold;
+        line-height: 55px;
+
+        h2{
+            font-size: 65px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 70px;
+        }
+
+        .icons{
+            display: flex;
+            justify-content: space-around;
+
+            a{
+                font-size: 25px;
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                i{
+                    font-size: 55px;
+                }
+            }
+        }
+
+    }
+
+    .address{
+        font-family: bold;
+        margin-top: 35px;
+
+        h2{
+            font-size: 65px;
+        }
+
+        p{
+            font-size: 30px;
+        }
+    }
+}
+
 .info{
     display: flex;
     justify-content: space-between;
