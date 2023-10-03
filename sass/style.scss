@@ -607,9 +607,10 @@ header {
         margin-left: 150px;
 
         .info_price{
-            display: flex;
-            justify-content: space-around;
-            width: 300px;
+            // display: flex;
+            // justify-content: space-around;
+            margin-left: 15px;
+            // width: 100px;
 
             .total{
                     display: inline-block;

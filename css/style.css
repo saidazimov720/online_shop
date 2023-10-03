@@ -504,9 +504,7 @@ header .parts li:hover {
   margin-left: 150px;
 }
 .info .information .info_price {
-  display: flex;
-  justify-content: space-around;
-  width: 300px;
+  margin-left: 15px;
 }
 .info .information .info_price .total, .info .information .info_price .minus, .info .information .info_price .old {
   display: inline-block;
