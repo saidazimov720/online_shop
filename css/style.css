@@ -199,6 +199,63 @@ header .parts li:hover {
   left: 20px;
 }
 
+#lots .cat {
+  left: 35px;
+  top: 750px;
+  font-size: 30px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700px;
+  line-height: 52px;
+  letter-spacing: 1.2px;
+}
+#lots #res {
+  top: 850px;
+  width: 1490px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#lots #res .card {
+  position: relative;
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  border: 1px solid transparent;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+#lots #res .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#lots #res .card h2 {
+  text-align: center;
+  font-size: 17px;
+}
+#lots #res .card p {
+  font-style: italic;
+}
+#lots #res .card img {
+  width: 250px;
+  height: 350px;
+  border-radius: 25px;
+  object-fit: contain;
+}
+#lots #res .card span {
+  color: red;
+}
+#lots #res .card button {
+  width: 250px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
 .balls {
   display: flex;
   position: relative;

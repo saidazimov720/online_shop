@@ -1,7 +1,7 @@
-const productsURL = "https://fakestoreapi.com/products?limit=8";
+const productsURL = "https://fakestoreapi.com/products?limit=24";
 const sartsURL = "https://fakestoreapi.com/carts";
 const usersURL = "https://fakestoreapi.com/users";
-const result = document.getElementById("rez");
+const result = document.getElementById("res");
 
 
 function getProducts() {
