@@ -49,6 +49,7 @@ header {
             font-size: 25px;
             padding: 5px 30px;
             border-radius: 6px;
+            margin-left: 25px;
             background-color: #F188F2;
             cursor: pointer;
         }
@@ -240,7 +241,7 @@ header {
     // display: block;
     .cat {
         // position: absolute;
-        left: 35px;
+        left: 35px; 
         top: 750px;
         font-size: 30px;
         color: #000;
@@ -407,9 +408,65 @@ header {
     }
 }
 
-footer{
+.foot{
     position: absolute;
     top: 3600px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 250px;
+    border-top: 1px solid black;
+
+    .contact{
+        font-family: bold;
+        line-height: 55px;
+
+        h2{
+            font-size: 65px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 70px;
+        }
+
+        .icons{
+            display: flex;
+            justify-content: space-around;
+
+            a{
+                font-size: 25px;
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                i{
+                    font-size: 55px;
+                }
+            }
+        }
+
+    }
+
+    .address{
+        font-family: bold;
+        margin-top: 35px;
+
+        h2{
+            font-size: 65px;
+        }
+
+        p{
+            font-size: 30px;
+        }
+    }
+}
+
+#foot{
+    position: absolute;
+    top: 2900px;
     display: flex;
     width: 100%;
     justify-content: space-around;

@@ -44,6 +44,7 @@ header .catalog button {
   font-size: 25px;
   padding: 5px 30px;
   border-radius: 6px;
+  margin-left: 25px;
   background-color: #F188F2;
   cursor: pointer;
 }
@@ -337,7 +338,7 @@ header .parts li:hover {
   border-radius: 25px;
 }
 
-footer {
+.foot {
   position: absolute;
   top: 3600px;
   display: flex;
@@ -346,40 +347,86 @@ footer {
   margin-bottom: 250px;
   border-top: 1px solid black;
 }
-footer .contact {
+.foot .contact {
   font-family: bold;
   line-height: 55px;
 }
-footer .contact h2 {
+.foot .contact h2 {
   font-size: 65px;
   margin-top: 50px;
   margin-bottom: 20px;
 }
-footer .contact p {
+.foot .contact p {
   font-size: 70px;
 }
-footer .contact .icons {
+.foot .contact .icons {
   display: flex;
   justify-content: space-around;
 }
-footer .contact .icons a {
+.foot .contact .icons a {
   font-size: 25px;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-footer .contact .icons a i {
+.foot .contact .icons a i {
   font-size: 55px;
 }
-footer .address {
+.foot .address {
   font-family: bold;
   margin-top: 35px;
 }
-footer .address h2 {
+.foot .address h2 {
   font-size: 65px;
 }
-footer .address p {
+.foot .address p {
+  font-size: 30px;
+}
+
+#foot {
+  position: absolute;
+  top: 2900px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 250px;
+  border-top: 1px solid black;
+}
+#foot .contact {
+  font-family: bold;
+  line-height: 55px;
+}
+#foot .contact h2 {
+  font-size: 65px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+#foot .contact p {
+  font-size: 70px;
+}
+#foot .contact .icons {
+  display: flex;
+  justify-content: space-around;
+}
+#foot .contact .icons a {
+  font-size: 25px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#foot .contact .icons a i {
+  font-size: 55px;
+}
+#foot .address {
+  font-family: bold;
+  margin-top: 35px;
+}
+#foot .address h2 {
+  font-size: 65px;
+}
+#foot .address p {
   font-size: 30px;
 }
 
