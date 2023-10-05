@@ -78,6 +78,7 @@ header .parts li:hover {
   float: right;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 .img .year {
   width: 50%;
@@ -117,7 +118,7 @@ header .parts li:hover {
 .img .text .buttons {
   word-spacing: 50px;
 }
-.img .text .buttons .promore {
+.img .text .buttons #promore {
   font-size: 25px;
   background-color: transparent;
   padding: 25px 50px;
@@ -126,7 +127,7 @@ header .parts li:hover {
   color: white;
   border-color: white;
 }
-.img .text .buttons .promore:hover {
+.img .text .buttons #promore:hover {
   background-color: white;
   color: black;
   border-color: transparent;
@@ -140,6 +141,7 @@ header .parts li:hover {
 
 .lots {
   display: block;
+  z-index: -1;
 }
 .lots .cat {
   position: absolute;
@@ -539,6 +541,43 @@ header .parts li:hover {
 
 .catalog {
   width: 1490px;
+}
+
+.login {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 150px;
+  left: 38%;
+  width: 450px;
+  height: 450px;
+  border: 1px solid black;
+  border-radius: 35px;
+  align-items: center;
+  line-height: 55px;
+}
+.login h1 {
+  font-size: 65px;
+  font-family: sans-serif;
+}
+.login label {
+  font-size: 35px;
+}
+.login input {
+  font-size: 20px;
+  width: 350px;
+  border-radius: 35px;
+}
+.login button {
+  width: 200px;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 35px;
+}
+.login button:hover {
+  background-color: lightblue;
+  color: black;
+  transition: 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

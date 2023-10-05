@@ -88,6 +88,7 @@ header {
     float: right;
     display: flex;
     justify-content: space-between;
+    z-index: +1;
 
     .year {
         width: 50%;
@@ -135,7 +136,7 @@ header {
         .buttons {
             word-spacing: 50px;
 
-            .promore{
+            #promore{
                 font-size: 25px;
                 background-color: transparent;
                 padding: 25px 50px;
@@ -163,6 +164,7 @@ header {
 
 .lots {
     display: block;
+    z-index: -1;
     .cat {
         position: absolute;
         left: 35px;
@@ -656,4 +658,48 @@ header {
 
 .catalog{
     width: 1490px;
+}
+
+.login{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 150px;
+    left: 38%;
+    width: 450px;
+    height: 450px;
+    // background-color: yellow;
+    border: 1px solid black;
+    border-radius: 35px;
+    align-items: center;
+    line-height: 55px;
+
+    h1{
+        font-size: 65px;
+        font-family: sans-serif;
+    }
+
+    label{
+        font-size: 35px;
+    }
+
+    input{
+        font-size: 20px;
+        width: 350px;
+        border-radius: 35px;
+    }
+
+    button{
+        width: 200px;
+        font-size: 30px;
+        background-color: white;
+        border-radius: 35px;
+
+        &:hover{
+            background-color: lightblue;
+            color: black;
+            transition: 1s;
+        }
+    }
+
 }
