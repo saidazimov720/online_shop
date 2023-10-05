@@ -7,15 +7,15 @@ const loding = document.getElementById("loding");
 
 function getProducts() {
     fetch(productsURL)
-    .then((res) => res.json())
-    .then((data) => showProducts(data));
+        .then((res) => res.json())
+        .then((data) => showProducts(data));
 }
 
 function showProducts(arr) {
     console.log(arr);
     result.innerHTML = "";
     result.innerHTML = arr.map((item) => {
-        const {id, title, price,  image} = item;
+        const { id, title, price, image } = item;
         return `
         <div class="card">
         <img src="${image}" alt="${title}">

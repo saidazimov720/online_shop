@@ -585,4 +585,17 @@ form button:hover {
   transition: 1s;
 }
 
+.karta {
+  width: 650px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.karta .karta_info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 250px;
+}
+
 /*# sourceMappingURL=style.css.map */

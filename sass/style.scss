@@ -13,23 +13,25 @@ header {
     justify-content: space-around;
     float: left;
 
-    .loding{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: black;
-   img{
-    width: 100%;
-    height: 100%;
-   }
-    
- 
-}
-.loded{
-    display: none;
-}
+    .loding {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+    }
+
+    .loded {
+        display: none;
+    }
 
     .logo {
         width: 150px;
@@ -66,6 +68,7 @@ header {
         display: flex;
         justify-content: space-around;
         padding-right: 35px;
+
         li {
             padding-left: 80px;
             padding-top: 30px;
@@ -77,7 +80,7 @@ header {
                 color: #FC42FF;
             }
 
-            a{
+            a {
                 text-decoration: none;
                 color: black;
             }
@@ -104,9 +107,9 @@ header {
     }
 
 
-    .ballimg{
+    .ballimg {
 
-        img{
+        img {
             display: flex;
             position: absolute;
         }
@@ -141,7 +144,7 @@ header {
         .buttons {
             word-spacing: 50px;
 
-            #promore{
+            #promore {
                 font-size: 25px;
                 background-color: transparent;
                 padding: 25px 50px;
@@ -150,7 +153,7 @@ header {
                 color: white;
                 border-color: white;
 
-                &:hover{
+                &:hover {
                     background-color: white;
                     color: black;
                     border-color: transparent;
@@ -170,6 +173,7 @@ header {
 .lots {
     display: block;
     z-index: -1;
+
     .cat {
         position: absolute;
         left: 35px;
@@ -202,8 +206,8 @@ header {
             background-color: white;
             border-radius: 5px;
             margin-top: 50px;
-            
-            &:hover{
+
+            &:hover {
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             }
 
@@ -227,7 +231,7 @@ header {
                 color: red;
             }
 
-            button{
+            button {
                 width: 250px;
                 height: 50px;
                 position: absolute;
@@ -245,10 +249,11 @@ header {
 
 
 #lots {
+
     // display: block;
     .cat {
         // position: absolute;
-        left: 35px; 
+        left: 35px;
         top: 750px;
         font-size: 30px;
         color: #000;
@@ -278,8 +283,8 @@ header {
             background-color: white;
             border-radius: 5px;
             margin-top: 50px;
-            
-            &:hover{
+
+            &:hover {
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             }
 
@@ -303,7 +308,7 @@ header {
                 color: red;
             }
 
-            button{
+            button {
                 width: 250px;
                 height: 50px;
                 position: absolute;
@@ -363,7 +368,7 @@ header {
             border-radius: 25px;
         }
 
-        .take{
+        .take {
             font-size: 28px;
             padding: 10px 130px;
             border-radius: 25px;
@@ -379,35 +384,35 @@ header {
     }
 }
 
-.prom{
+.prom {
     position: absolute;
     top: 3000px;
     display: flex;
-    
 
-    h2{
+
+    h2 {
         margin-right: 25px;
     }
 }
 
-.our{
+.our {
     position: absolute;
     top: 3150px;
     width: 100%;
 
-    h2{
+    h2 {
         margin-left: 50px;
         margin-bottom: 50px;
         font-size: 30px;
     }
 
-    .rasm{
+    .rasm {
         display: flex;
         justify-content: space-around;
         width: 100%;
         left: 350px;
 
-        img{
+        img {
             width: 250px;
             border: 1px solid whitesmoke;
             border-radius: 25px;
@@ -415,7 +420,7 @@ header {
     }
 }
 
-.foot{
+.foot {
     position: absolute;
     top: 3600px;
     display: flex;
@@ -424,32 +429,32 @@ header {
     margin-bottom: 250px;
     border-top: 1px solid black;
 
-    .contact{
+    .contact {
         font-family: bold;
         line-height: 55px;
 
-        h2{
+        h2 {
             font-size: 65px;
             margin-top: 50px;
             margin-bottom: 20px;
         }
 
-        p{
+        p {
             font-size: 70px;
         }
 
-        .icons{
+        .icons {
             display: flex;
             justify-content: space-around;
 
-            a{
+            a {
                 font-size: 25px;
                 text-decoration: none;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
 
-                i{
+                i {
                     font-size: 55px;
                 }
             }
@@ -457,21 +462,21 @@ header {
 
     }
 
-    .address{
+    .address {
         font-family: bold;
         margin-top: 35px;
 
-        h2{
+        h2 {
             font-size: 65px;
         }
 
-        p{
+        p {
             font-size: 30px;
         }
     }
 }
 
-#foot{
+#foot {
     position: absolute;
     top: 2900px;
     display: flex;
@@ -480,32 +485,32 @@ header {
     margin-bottom: 250px;
     border-top: 1px solid black;
 
-    .contact{
+    .contact {
         font-family: bold;
         line-height: 55px;
 
-        h2{
+        h2 {
             font-size: 65px;
             margin-top: 50px;
             margin-bottom: 20px;
         }
 
-        p{
+        p {
             font-size: 70px;
         }
 
-        .icons{
+        .icons {
             display: flex;
             justify-content: space-around;
 
-            a{
+            a {
                 font-size: 25px;
                 text-decoration: none;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
 
-                i{
+                i {
                     font-size: 55px;
                 }
             }
@@ -513,21 +518,21 @@ header {
 
     }
 
-    .address{
+    .address {
         font-family: bold;
         margin-top: 35px;
 
-        h2{
+        h2 {
             font-size: 65px;
         }
 
-        p{
+        p {
             font-size: 30px;
         }
     }
 }
 
-.infofoot{
+.infofoot {
     position: absolute;
     top: 1000px;
     display: flex;
@@ -536,32 +541,32 @@ header {
     margin-bottom: 250px;
     border-top: 1px solid black;
 
-    .contact{
+    .contact {
         font-family: bold;
         line-height: 55px;
 
-        h2{
+        h2 {
             font-size: 65px;
             margin-top: 50px;
             margin-bottom: 20px;
         }
 
-        p{
+        p {
             font-size: 70px;
         }
 
-        .icons{
+        .icons {
             display: flex;
             justify-content: space-around;
 
-            a{
+            a {
                 font-size: 25px;
                 text-decoration: none;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
 
-                i{
+                i {
                     font-size: 55px;
                 }
             }
@@ -569,30 +574,30 @@ header {
 
     }
 
-    .address{
+    .address {
         font-family: bold;
         margin-top: 35px;
 
-        h2{
+        h2 {
             font-size: 65px;
         }
 
-        p{
+        p {
             font-size: 30px;
         }
     }
 }
 
-.info{
+.info {
     display: flex;
     justify-content: space-between;
     position: absolute;
     margin-top: 150px;
 
-    .info_img{
+    .info_img {
         line-height: 20px;
 
-        h1{
+        h1 {
             font-family: italic;
             text-align: center;
             margin-bottom: 25px;
@@ -601,34 +606,34 @@ header {
             width: 500px;
         }
 
-        img{
+        img {
             width: 500px;
             height: 600px;
             margin-left: 150px;
         }
     }
 
-    .information{
+    .information {
         width: 500px;
         margin-top: 60px;
         margin-left: 150px;
 
-        .info_price{
+        .info_price {
             // display: flex;
             // justify-content: space-around;
             margin-left: 15px;
             // width: 100px;
 
-            .total{
-                    display: inline-block;
-                    margin: 10px;
-                    font-size: 35px;
-                    font-family: sans-serif;
-                    // text-decoration: line-through;
-                    color: red;
+            .total {
+                display: inline-block;
+                margin: 10px;
+                font-size: 35px;
+                font-family: sans-serif;
+                // text-decoration: line-through;
+                color: red;
             }
 
-            .old{
+            .old {
                 @extend .total;
                 font-size: 25px;
                 text-decoration: line-through;
@@ -636,7 +641,7 @@ header {
                 color: black
             }
 
-            .minus{
+            .minus {
                 @extend .total;
                 font-size: 25px;
                 color: black;
@@ -645,27 +650,27 @@ header {
             }
         }
 
-        button{
+        button {
             text-align: center;
             margin-left: 100px;
             padding: 20px 100px;
             margin-bottom: 25px;
-            margin-top: 25px;   
+            margin-top: 25px;
             font-size: 25px;
         }
 
-        p{
+        p {
             font-size: 25px;
             text-align: justify;
         }
     }
 }
 
-.catalog{
+.catalog {
     width: 1490px;
 }
 
-form{
+form {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -679,33 +684,47 @@ form{
     align-items: center;
     line-height: 55px;
 
-    h1{
+    h1 {
         font-size: 65px;
         font-family: sans-serif;
     }
 
-    label{
+    label {
         font-size: 35px;
     }
 
-    input{
+    input {
         padding: 8px 30px;
         border-radius: 35px;
         font-size: 17px;
         width: 350px;
     }
 
-    button{
+    button {
         width: 200px;
         font-size: 30px;
         background-color: white;
         border-radius: 35px;
 
-        &:hover{
+        &:hover {
             background-color: lightblue;
             color: black;
             transition: 1s;
         }
     }
 
+}
+
+.karta {
+    width: 650px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .karta_info {
+        display: flex;
+        flex-direction: column;
+        margin-right: 250px;
+    }
 }
