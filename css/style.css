@@ -547,7 +547,7 @@ header .parts li a {
   width: 1490px;
 }
 
-.login {
+form {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -560,26 +560,26 @@ header .parts li a {
   align-items: center;
   line-height: 55px;
 }
-.login h1 {
+form h1 {
   font-size: 65px;
   font-family: sans-serif;
 }
-.login label {
+form label {
   font-size: 35px;
 }
-.login input {
+form input {
   padding: 8px 30px;
   border-radius: 35px;
   font-size: 17px;
   width: 350px;
 }
-.login button {
+form button {
   width: 200px;
   font-size: 30px;
   background-color: white;
   border-radius: 35px;
 }
-.login button:hover {
+form button:hover {
   background-color: lightblue;
   color: black;
   transition: 1s;

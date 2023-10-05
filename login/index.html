@@ -28,7 +28,7 @@
             </ul>
         </div>
     </header>
-    <div class="login">
+    <form>
         <h1>Log in</h1>
         <label for="user">Username</label>
         <input id="user" type="text" required>
@@ -37,33 +37,10 @@
         <label for="email">E-mail</label>
         <input id="email" type="email" required>
         <br>
-        <button onclick="handleSubmit()" >Submit</button>
-    </div>
+        <button onclick="addusers()" >Submit</button>
+    </form>
 
 
-    <script>
-        
-        var users = [];
-
-function handleSubmit() {
-    var username = document.getElementById("user").value;
-    var password = document.getElementById("password").value;
-    var email = document.getElementById("email").value;
-
-    var user = {
-        username: username,
-        password: password,
-        email: email
-    };
-
-    users.push(user);
-
-    document.getElementById("user").value = "";
-    document.getElementById("password").value = "";
-    document.getElementById("email").value = "";
-
-    alert("User registered successfully!");
-}
-    </script>
+    <script src="./login.js"></script>
 </body>
 </html>
