@@ -69,6 +69,10 @@ header .parts li {
 header .parts li:hover {
   color: #FC42FF;
 }
+header .parts li a {
+  text-decoration: none;
+  color: black;
+}
 
 .img {
   display: flex;

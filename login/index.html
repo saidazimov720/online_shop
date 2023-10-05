@@ -31,13 +31,39 @@
     <div class="login">
         <h1>Log in</h1>
         <label for="user">Username</label>
-        <input id="user" type="text">
-        <label for="password">Password</label>
-        <input id="password" type="password">
+        <input id="user" type="text" required>
+        <label for="password" >Password</label>
+        <input id="password" type="password" required>
         <label for="email">E-mail</label>
-        <input id="email" type="email">
+        <input id="email" type="email" required>
         <br>
-        <button>Submit</button>
+        <button onclick="handleSubmit()" >Submit</button>
     </div>
+
+
+    <script>
+        
+        var users = [];
+
+function handleSubmit() {
+    var username = document.getElementById("user").value;
+    var password = document.getElementById("password").value;
+    var email = document.getElementById("email").value;
+
+    var user = {
+        username: username,
+        password: password,
+        email: email
+    };
+
+    users.push(user);
+
+    document.getElementById("user").value = "";
+    document.getElementById("password").value = "";
+    document.getElementById("email").value = "";
+
+    alert("User registered successfully!");
+}
+    </script>
 </body>
 </html>
