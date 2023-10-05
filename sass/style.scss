@@ -726,5 +726,9 @@ form {
         display: flex;
         flex-direction: column;
         margin-right: 250px;
+
+        h2{
+            font-size: 35px;
+        }
     }
 }

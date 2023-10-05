@@ -597,5 +597,8 @@ form button:hover {
   flex-direction: column;
   margin-right: 250px;
 }
+.karta .karta_info h2 {
+  font-size: 35px;
+}
 
 /*# sourceMappingURL=style.css.map */
