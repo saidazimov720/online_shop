@@ -91,33 +91,14 @@ header {
 .img {
     display: flex;
     width: 100%;
-    height: 400px;
-    margin-top: -30px;
-    float: right;
-    display: flex;
+    height: 600px;
     justify-content: space-between;
     z-index: +1;
 
     .year {
-        width: 50%;
-        height: 600px;
-        margin-top: 30px;
-        background-color: #A1E2EB;
-        z-index: -1;
-    }
-
-
-    .ballimg {
-
-        img {
-            display: flex;
-            position: absolute;
-        }
-    }
-
-    .text {
         padding-top: 150px;
         padding-left: 50px;
+        width: 950px;
         top: 100px;
         left: 100px;
         background-color: #A1E2EB;
@@ -163,7 +144,6 @@ header {
     }
 
     img {
-        margin-top: 30px;
         position: absolute;
         right: 0px;
         z-index: -1;

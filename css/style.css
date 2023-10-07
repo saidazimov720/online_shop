@@ -77,33 +77,20 @@ header .parts li a {
 .img {
   display: flex;
   width: 100%;
-  height: 400px;
-  margin-top: -30px;
-  float: right;
-  display: flex;
+  height: 600px;
   justify-content: space-between;
   z-index: 1;
 }
 .img .year {
-  width: 50%;
-  height: 600px;
-  margin-top: 30px;
-  background-color: #A1E2EB;
-  z-index: -1;
-}
-.img .ballimg img {
-  display: flex;
-  position: absolute;
-}
-.img .text {
   padding-top: 150px;
   padding-left: 50px;
+  width: 950px;
   top: 100px;
   left: 100px;
   background-color: #A1E2EB;
   z-index: -1;
 }
-.img .text h1 {
+.img .year h1 {
   color: #FFF;
   font-family: Montserrat;
   font-size: 80px;
@@ -111,7 +98,7 @@ header .parts li a {
   font-weight: 700;
   line-height: 130%;
 }
-.img .text blockquote {
+.img .year blockquote {
   color: #FFF;
   font-family: Montserrat;
   font-size: 63px;
@@ -119,10 +106,10 @@ header .parts li a {
   font-weight: 700;
   line-height: 130%;
 }
-.img .text .buttons {
+.img .year .buttons {
   word-spacing: 50px;
 }
-.img .text .buttons #promore {
+.img .year .buttons #promore {
   font-size: 25px;
   background-color: transparent;
   padding: 25px 50px;
@@ -131,13 +118,12 @@ header .parts li a {
   color: white;
   border-color: white;
 }
-.img .text .buttons #promore:hover {
+.img .year .buttons #promore:hover {
   background-color: white;
   color: black;
   border-color: transparent;
 }
 .img img {
-  margin-top: 30px;
   position: absolute;
   right: 0px;
   z-index: -1;
