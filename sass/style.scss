@@ -244,8 +244,6 @@ header {
     }
 
     #res {
-        // position: absolute;
-        top: 850px;
         width: 1490px;
         overflow: hidden;
         display: flex;
@@ -302,20 +300,104 @@ header {
     }
 }
 
+// .lider{
+//     display: flex;
+//     flex-direction: column;
+//     line-height: 50px;
+
+.sell {
+    display: flex;
+    width: 96%;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    h2 {
+        margin-right: 50px;
+    }
+
+    blockquote {
+        cursor: pointer;
+
+        &:hover {
+            color: #FC42FF;
+        }
+    }
+}
+
+.photos {
+    display: flex;
+    justify-content: space-around;
+
+    .sells {
+        display: flex;
+        flex-direction: column;
+
+        &:hover{
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            }
+        }
+
+        .baks {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 130%;
+                /* 39px */
+                letter-spacing: 0.9px;
+            }
+
+            #old_price {
+                color: #8B8B8B;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                /* 26px */
+                letter-spacing: 0.6px;
+                text-decoration: line-through;
+            }
+
+            #percent {
+                color: #FF32A1;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 130%;
+                /* 26px */
+                letter-spacing: 0.6px;
+            }
+        }
+    }
+}
+
+// }
+
 
 .balls {
     // position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 2500px;
     width: 100%;
     height: 76vh;
+    margin-bottom: 50px;
     background: linear-gradient(white 13.5%, #ca4acb 13% 100%);
 
 
     .image {
         width: 100%;
+        padding-top: 2px;
         left: 0px;
 
         img {
@@ -341,7 +423,9 @@ header {
         }
 
         input {
-            font-size: 35px;
+            font-size: 17px;
+            outline: none;
+            padding: 15px 80px;
             border: 1px solid transparent;
             border-radius: 25px;
         }
@@ -374,9 +458,8 @@ header {
 }
 
 .our {
-    // position: absolute;
-    top: 3150px;
     width: 100%;
+    margin-bottom: 50px;
 
     h2 {
         margin-left: 50px;
@@ -704,7 +787,7 @@ form {
         flex-direction: column;
         margin-right: 250px;
 
-        h2{
+        h2 {
             font-size: 35px;
         }
     }
