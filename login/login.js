@@ -29,9 +29,11 @@ function addusers() {
       .then((json) => {
         localStorage.setItem("user", JSON.stringify(json));
         console.log("Foydalanuvchi saqlandi:", json);
+        alert("Foydalanuvchi tasdiqlandi", json);
       })
       .catch((error) => {
         console.error("Xatolik:", error);
+        alert("Xatolik yuz berdi:", error);
       });
   }
   

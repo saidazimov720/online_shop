@@ -320,9 +320,15 @@ header {
     blockquote {
         cursor: pointer;
 
-        &:hover {
-            color: #FC42FF;
+        a{
+            text-decoration: none;
+
+            &:hover {
+                color: #FC42FF;
+            }
         }
+
+       
     }
 }
 

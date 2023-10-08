@@ -55,7 +55,7 @@ function mainBuy() {
     alert("so'rovingiz adminga yuborildi")
   }
   else {
-    window.location.replace(`../Login/index.html`);
+    window.location.replace(`../login/index.html`);
   }
 }
 

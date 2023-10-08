@@ -258,7 +258,10 @@ header .parts li a {
 .sell blockquote {
   cursor: pointer;
 }
-.sell blockquote:hover {
+.sell blockquote a {
+  text-decoration: none;
+}
+.sell blockquote a:hover {
   color: #FC42FF;
 }
 
