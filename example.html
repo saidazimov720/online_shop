@@ -3,20 +3,460 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../media/983e19c96cb64d52000d3a47c08fa9fd.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Courier New', Courier, monospace;
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+                border-radius: 15px;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+        }
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            object-fit: contain;
+            background-color: white;
+            position: fixed;
+            width: 100%;
+        }
+
+        .loaded {
+            display: none;
+        }
+
+        header {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+
+            .header_box_1 {
+                gap: 20px;
+
+                button {
+                    padding: 10px;
+                    padding-left: 30px;
+                    background-color: #e9e9e9;
+                    border: none;
+                    border-radius: 10px;
+                    color: black;
+                    font-family: "Courier New", Courier, monospace;
+                }
+
+                .header_input_box {
+                    width: 350px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    padding: 10px 8px;
+
+                    input {
+                        width: 308px;
+                        border: none;
+                        font-family: "Courier New", Courier, monospace;
+
+                        &:focus-visible {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+            .header_box_2 {
+                gap: 50px;
+
+                a {
+                    padding-top: 10px;
+                    text-decoration: none;
+                    list-style: none;
+
+                    p {
+                        font-family: "Courier New", Courier, monospace;
+                        color: black;
+                    }
+
+                    button {
+                        margin-top: -10px;
+                    }
+                }
+            }
+        }
+
+        h1 {
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+
+            #Basket_res {
+                .product {
+                    display: grid;
+                    gap: 30px;
+                    grid-template-columns: 25% 35% 30%;
+                    border-top: 1px solid grey;
+                    padding: 30px 0px;
+                    overflow: hidden;
+                    position: relative;
+                    height: 195px;
+
+                    .deleteProd {
+                        position: absolute;
+                        font-size: 20px;
+                        top: 20px;
+                        right: 20px;
+                        cursor: pointer;
+                    }
+
+                    .prodImg {
+                        overflow: hidden;
+
+                        img {
+                            border-radius: 10px;
+                            width: 150px;
+                            height: 150px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .updateProd {
+                        display: grid;
+                        grid-template-columns: auto;
+                        grid-template-rows: auto auto;
+
+                        .title {
+                            width: 300px;
+                            height: 80px;
+                            font-size: 20px;
+                        }
+
+                        .quantity {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 150px;
+                            height: 30px !important;
+                            padding: 15px 15px;
+                            border: 1px solid grey;
+                            border-radius: 15px;
+                            overflow: hidden;
+
+                            button {
+                                background-color: transparent;
+                                border: none;
+                                height: 30px;
+                                font-size: 25px;
+                                letter-spacing: -5px;
+                                cursor: pointer;
+                            }
+
+                            p {
+                                margin-top: 18px;
+                                font-size: 22px;
+                            }
+                        }
+                    }
+
+                    .prodPrice {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h3 {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 45px;
+                            font-weight: normal;
+                        }
+
+                        del {
+                            font-size: 22px;
+                            color: grey;
+                        }
+                    }
+                }
+            }
+
+            .totalInfo {
+                display: flex;
+                justify-content: center;
+                height: fit-content;
+
+                .wrap {
+                    width: 400px;
+                    border: 2px solid black;
+                    border-radius: 15px;
+                    padding: 20px;
+
+                    .title {
+                        padding-bottom: 10px;
+                    }
+
+                    .totalQuantity {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 20px;
+                        padding: 10px 0px;
+                    }
+
+                    .totalPrice {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 20px;
+                        padding: 0px 0px 10px;
+                    }
+
+                    .form {
+                        padding-top: 20px;
+
+                        input {
+                            width: 100%;
+                            padding: 12px 20px;
+                            border: 1px solid grey;
+                            border-radius: 10px;
+                            font-size: 22px;
+
+                            &:focus-visible {
+                                outline: none;
+                            }
+                        }
+
+                        button {
+                            width: 100%;
+                            background-color: #e9e9e9;
+                            color: black;
+                            border: 1px solid#e9e9e9;
+                            border-radius: 10px;
+                            margin-top: 20px;
+                            padding: 12px 20px;
+                            font-size: 22px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            width: 100%;
+            height: 350px;
+            display: flex;
+            padding: 10px 40px;
+            justify-content: space-between;
+
+            .kontakt {
+                h1 {
+                    font-size: 50px;
+                }
+
+                h2 {
+                    font-size: 50px;
+                }
+
+                div {
+                    gap: 80px;
+                }
+            }
+        }
+    </style>
+    <title>Basket</title>
 </head>
 
 <body>
-    <div class="karta">
-        <img src="./media/images.jpg" alt="${title}">
-        <div class="karta_info">
-            <h2>${title}</h2>
-            <span>${price}$</span><br>
-            <button onclick="infohandler($)">More Info</button>
-        </div>
+    <div id="spinner" class="loading">
+        <img src="https://www.superiorlawncareusa.com/wp-content/uploads/2020/05/loading-gif-png-5.gif" width="50%"
+            height="50%" alt="">
     </div>
+    <header>
+        <div class="header_box_1 d-flex">
+            <a href="#">
+                <img src="../media/983e19c96cb64d52000d3a47c08fa9fd.png" width="50px" height="50px"
+                    style="border-radius: 30px;" alt="">
+            </a>
+            <button>Каталог</button>
+            <div class="header_input_box">
+                <img src="../media/icons8-search 1.png" alt="">
+                <input type="text" placeholder="Поиск">
+            </div>
+        </div>
+        <div class="header_box_2 d-flex">
+            <a href="../index.html">
+                <p>основной</p>
+            </a>
+            <a href="../sort/index.html">
+                <p>Редактирование</p>
+            </a>
+            <a href="#">
+                <p>Контакты</p>
+            </a>
+            <a href="../gallery/index.html">
+                <p>Галерея</p>
+            </a>
+            <a href="#">
+                <p>Отзывы</p>
+            </a>
+            <button class="btn position-relative" onclick="entry_basket()" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <img src="../media/icons8-shopping_bag 1.png" alt="">
+            </button>
+        </div>
+    </header>
+    <h1>Basket</h1>
+    <main>
+        <div id="Basket_res">
+
+        </div>
+        <div>
+            <div class="totalInfo">
+                <div class="wrap">
+                    <div class="title">
+                        <h2>Order details</h2>
+                    </div>
+                    <div class="totalQuantity">
+                        <p>Quantity</p>
+                        <h3 id="totalQuantity">3</h3>
+                    </div>
+                    <div class="totalPrice">
+                        <p>Total price</p>
+                        <h2 id="totalPrice">285 $</h2>
+                    </div>
+                    <div class="form">
+                        <input type="tel" name="phone" id="phone_num" placeholder="Enter your phone number" />
+                        <button onclick="mainBuy()">Pervous</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <hr>
+    <footer>
+        <div class="kontakt">
+            <h1><b>Контакты</b></h1>
+            <br>
+            <h2><b>+998 901803663</b></h2>
+            <br><br>
+            <div class="d-flex">
+                <div class="text-center">
+                    <a href="https://www.instagram.com/developer_mrx/" style="text-decoration: none; color:black;">
+                        <img src="../media/icons8-instagram 1.png" alt="">
+                        <p><b>instagram</b></p>
+                    </a>
+                </div>
+                <div class="text-center">
+                    <a href="https://www.whatsapp.com/" style="text-decoration: none; color:black;">
+                        <img src="../media/icons8-whatsapp 1.png" alt="">
+                        <p><b>WhatsApp</b></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="address">
+            <h1><b>Адрес</b></h1>
+            <br>
+            <h1><b>Джизакская область, <br> Раваллыкский район, улица <br> Узбекисяна, 18</b></h1>
+            <br>
+            <h2><b>24/7</b></h2>
+        </div>
+    </footer>
+    <script>
+        const spinner = document.getElementById("spinner");
+        const Basket_res = document.getElementById("Basket_res");
+        const quantity_res = document.getElementById("quantity_res");
+        const phone_num = document.getElementById('phone_num');
+        const num = localStorage.getItem("number_click");
+        const id = localStorage.getItem("product_id");
+
+        var minus = num - 1;
+
+        function product_request_send() {
+            spinner.classList.remove("loading");
+            spinner.classList.add("loaded");
+            fetch(`https://fakestoreapi.com/products/${id}`)
+                .then((res) => res.json())
+                .then((json) => show_product(json));
+            console.log(Number(minus), Number(id));
+        }
+
+        function show_product(data) {
+            const { id, price, category, image } = data;
+            Basket_res.innerHTML += `
+    <div class="product">
+    <div class="deleteProd" onclick="deleteProduct(${id})">
+      <i class="fa-solid fa-x"></i>
+    </div>
+    <div class="prodImg">
+      <img
+        src="${image}"
+        alt="..."
+      />
+    </div>
+    <div class="updateProd">
+      <div class="title">
+        <p>${category}</p>
+      </div>
+      <div id="quantity_res" class="quantity">
+      <button class="decreaseBtn"><i class="fa-solid fa-minus"></i></button>
+      <p>${minus}</p>
+      <button><i class="fa-solid fa-plus"></i></button>
+      </div>
+      </div>
+      <div class="prodPrice">
+      <h3>${price}$</h3>
+      <del>100 $</del>
+      </div>
+      </div>
+      <hr>
+      `;
+        }
+
+        // function deleteProduct(id) {}
+
+        function mainBuy() {
+            if (phone_num.value.trim() != "") {
+                alert("so'rovingiz adminga yuborildi")
+            }
+            else {
+                window.location.replace(`../Login/index.html`)
+            }
+        }
+
+        product_request_send();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
