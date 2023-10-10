@@ -23,7 +23,7 @@ function showinfo(data) {
                     <span class="old">${price + 100}$</span>
                     <span class="minus">- $100</span>
                 </p>
-                <button onclick="addTask(${id})">Buy</button>
+                <button onclick="addCart(${id})">Buy</button>
                 <hr>
                 <p>${description}</p>
             </div>

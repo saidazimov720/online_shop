@@ -60,3 +60,71 @@ function mainBuy() {
 }
 
 product_request_send();
+
+
+// function addCart(id) {
+//   if (id) {
+//     var products = JSON.parse(localStorage.getItem("products")) ?? [];
+//     products.push(id);
+//     console.log(products);
+//     localStorage.setItem("products", JSON.stringify(products));
+//     addCartFetch(id);
+//   }
+// }
+
+// function addCartFetch(id) {
+//   fetch(`https://fakestoreapi.com/products/${id}`)
+//     .then((res) => res.json())
+//     .then((product) => {
+//       const image = product.image;
+//       const title = product.title;
+//       const price = product.price;
+//       const discountPrice = price;
+//       const increasPrice = price + price * 0.05;
+//       const buyProduct = document.getElementById("buyProduct");
+//       if (buyProduct.innerHTML === "") {
+//         buyProduct.innerHTML = <h1>You haven't bought a product yet</h1>;
+//       } else {
+//         buyProduct.innerHTML += `
+//           <div class="product">
+//             <div class="deleteProd" onclick="deleteProd(${id})">
+//               <i class="fa-solid fa-x"></i>
+//             </div>
+//             <div class="prodImg">
+//               <img src="${image}" alt="..." />
+//             </div>
+//             <div class="updateProd">
+//               <div class="title">
+//                 <p>${title}</p>
+//               </div>
+//               <div class="quantity">
+//                 <button class="updateBtn" onclick="decreaseItem(${id})">
+//                   <i class="fa-solid fa-minus"></i>
+//                 </button>
+//                 <p class="prodNum" id="prodNum${id}">13</p>
+//                 <button onclick="increaseItem(${id})">
+//                   <i class="fa-solid fa-plus"></i>
+//                 </button>
+//               </div>
+//             </div>
+//             <div class="prodPrice">
+//               <h3>${discountPrice} $</h3>
+//               <del>${increasPrice} $</del>
+//             </div>
+//           </div>`;
+//       }
+
+//       const products = JSON.parse(localStorage.getItem("products")) || [];
+//       const productInfo = {
+//         id: id,
+//         image: image,
+//         title: title,
+//         price: price,
+//       };
+//       products.push(productInfo);
+//       localStorage.setItem("products", JSON.stringify(products));
+//     })
+//     .catch((error) => {
+//       console.error("Xatolik:", error);
+//     });
+// }
