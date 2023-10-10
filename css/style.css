@@ -707,7 +707,6 @@ form button:hover {
 .product {
   width: 450px;
   display: flex;
-  background-color: lightblue;
 }
 .product .prodImg img {
   width: 150px;

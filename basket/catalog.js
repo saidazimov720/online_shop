@@ -56,5 +56,5 @@ product_send();
 
 
 function deleteProduct(id) {
-  
+
 }
