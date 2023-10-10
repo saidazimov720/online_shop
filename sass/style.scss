@@ -290,20 +290,12 @@ header {
                 position: absolute;
                 bottom: 10px;
                 left: 20px;
-                // opacity: 0;
-                // transition: 0.3s;
-                // :hover{
-                //     opacity: 1;
-                // }
             }
         }
     }
 }
 
-// .lider{
-//     display: flex;
-//     flex-direction: column;
-//     line-height: 50px;
+
 
 .sell {
     display: flex;
@@ -391,7 +383,6 @@ header {
 
 
 .balls {
-    // position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -685,17 +676,13 @@ header {
         margin-left: 150px;
 
         .info_price {
-            // display: flex;
-            // justify-content: space-around;
             margin-left: 15px;
-            // width: 100px;
 
             .total {
                 display: inline-block;
                 margin: 10px;
                 font-size: 35px;
                 font-family: sans-serif;
-                // text-decoration: line-through;
                 color: red;
             }
 
@@ -744,7 +731,6 @@ form {
     left: 35%;
     width: 450px;
     height: 450px;
-    // background-color: yellow;
     border: 1px solid black;
     border-radius: 35px;
     align-items: center;
