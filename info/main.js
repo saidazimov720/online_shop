@@ -36,5 +36,5 @@ getinfo();
 
 function addCart(id) {
     console.log(id, "id");
-    window.open(`http://127.0.0.1:5500/basket/index.html?${id}`);
+    window.DataTransfer(`http://127.0.0.1:5500/basket/index.html?${id}`);
 }

@@ -185,9 +185,9 @@ header {
             border-radius: 5px;
             margin-top: 50px;
 
-            &:hover {
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            }
+            // &:hover {
+            //     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            // }
 
             h2 {
                 text-align: center;
@@ -260,9 +260,9 @@ header {
             border-radius: 5px;
             margin-top: 50px;
 
-            &:hover {
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            }
+            // &:hover {
+            //     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            // }
 
             h2 {
                 text-align: center;
@@ -332,11 +332,10 @@ header {
         display: flex;
         flex-direction: column;
 
-        &:hover{
-            &:hover {
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            }
-        }
+            // &:hover {
+            //     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            // }
+        
 
         .baks {
             display: flex;

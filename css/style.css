@@ -161,9 +161,6 @@ header .parts li a {
   border-radius: 5px;
   margin-top: 50px;
 }
-.lots #res .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
 .lots #res .card h2 {
   text-align: center;
   font-size: 17px;
@@ -217,9 +214,6 @@ header .parts li a {
   border-radius: 5px;
   margin-top: 50px;
 }
-#lots #res .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
 #lots #res .card h2 {
   text-align: center;
   font-size: 17px;
@@ -272,9 +266,6 @@ header .parts li a {
 .photos .sells {
   display: flex;
   flex-direction: column;
-}
-.photos .sells:hover:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .photos .sells .baks {
   display: flex;
