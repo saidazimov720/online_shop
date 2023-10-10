@@ -20,7 +20,6 @@ function showProducts(arr) {
         <img src="${image}" alt="${title}">
         <h2>${title}</h2>
         <span>${price}$</span><br>
-        <button onclick="infohandler(${id})">More Info</button>
         </div>
         `
     }).join(" ");

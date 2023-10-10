@@ -60,7 +60,7 @@ header {
             font-size: 20px;
             height: 40px;
             border-radius: 5px;
-            width: 410px;
+            width: 390px;
         }
     }
 
@@ -787,6 +787,7 @@ form {
 
 
 .totalInfo {
+    float: right;
     display: flex;
     justify-content: center;
     height: fit-content;
@@ -843,5 +844,22 @@ form {
                 cursor: pointer;
             }
         }
+    }
+}
+
+.product{
+    width: 450px;
+    display: flex;
+    background-color: lightblue;
+
+    .prodImg{
+
+        img{
+            width: 150px;
+        }
+    }
+
+    .updateprod{
+        display: flex;
     }
 }

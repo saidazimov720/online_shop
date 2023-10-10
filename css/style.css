@@ -52,7 +52,7 @@ header .catalog input {
   font-size: 20px;
   height: 40px;
   border-radius: 5px;
-  width: 410px;
+  width: 390px;
 }
 header .parts {
   display: flex;
@@ -652,6 +652,7 @@ form button:hover {
 }
 
 .totalInfo {
+  float: right;
   display: flex;
   justify-content: center;
   height: fit-content;
@@ -701,6 +702,18 @@ form button:hover {
   padding: 12px 20px;
   font-size: 22px;
   cursor: pointer;
+}
+
+.product {
+  width: 450px;
+  display: flex;
+  background-color: lightblue;
+}
+.product .prodImg img {
+  width: 150px;
+}
+.product .updateprod {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
